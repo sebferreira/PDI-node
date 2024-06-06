@@ -4,7 +4,7 @@ const { promisify } = require('util');
 const db = mysql.createPool({
     host: "127.0.0.1",
     user:"root",
-    password:"root",
+    password:"",
     database:"usuarios_db",
 })
 
