@@ -1,0 +1,3 @@
+//sacamos lo que no sirve exportar
+node_modules
+.env

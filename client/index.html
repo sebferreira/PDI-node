@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Listado de tareas</title>
+</head>
+
+<body>
+  <header class="py-3">
+    <h1>Listado de tareas</h1>
+  </header>
+  <div class="head">
+
+  </div>
+  <main class="container">
+    <div class="contenedor-tabla">
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Completado</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-tareas">
+          <!--Acá se muestran las tareas en la tabla-->
+        </tbody>
+      </table>
+      <button class="btn btn-nueva">
+        <a href="/client/crear.html">Crear una tarea</a>
+      </button>
+    </div>
+
+    <div class="contenedor-form">
+      <section class="formulario">
+        <h3>Editar Tareas</h3>
+        <form id="form">
+          <label>Titulo</label>
+          <input type="text" name="name" id="name" value="">
+          <label>Descripcion</label>
+          <input type="text" name="description" id="description" value="">
+          <button type="submit" name="submit">Enviar</button>
+        </form>
+      </section>
+
+    </div>
+
+    <div id="Modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-p">
+          <p id="ptitle"></p>
+          <p id="pdescription"></p>
+          <p id="pisCompleted"></p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="scripts/tareas.js" type="module"></script>
+</body>
+
+</html>
